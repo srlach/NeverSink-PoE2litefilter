@@ -392,7 +392,7 @@ SetFontSize 40
 
 Hide
 WaystoneTier < 12
-#AreaLevel > 77
+AreaLevel > 65
 BaseType "Waystone"
 Rarity <= Rare
 SetTextColor 255 255 255
@@ -464,29 +464,29 @@ SetFontSize 40
 # Salvagable Items
 #--------------------------
 
-Show
-Sockets > 0
-Rarity Normal
-SetBorderColor 200 200 200
-SetFontSize 35
+#Show
+#Sockets > 0
+#Rarity Normal
+#SetBorderColor 200 200 200
+#SetFontSize 35
 
-Show
-Quality > 0
-Rarity Normal
-SetBorderColor 200 200 200
-SetFontSize 35
+#Show
+#Quality > 0
+#Rarity Normal
+#SetBorderColor 200 200 200
+#SetFontSize 35
 
-Show
-Sockets > 0
-Rarity Magic
-SetBorderColor 0 0 200
-SetFontSize 35
+#Show
+#Sockets > 0
+#Rarity Magic
+#SetBorderColor 0 0 200
+#SetFontSize 35
 
-Show
-Quality > 0
-Rarity Magic
-SetBorderColor 0 0 200
-SetFontSize 35
+#Show
+#Quality > 0
+#Rarity Magic
+#SetBorderColor 0 0 200
+#SetFontSize 35
 
 #--------------------------
 # Random Rares
@@ -494,11 +494,11 @@ SetFontSize 35
 
 ## Uncomment this rule to hide low level rares in high level zones
 
-# Hide
-# Rarity Rare
-# DropLevel < 50
-# AreaLevel > 72
-# SetFontSize 35
+Hide
+Rarity Rare
+DropLevel < 50
+AreaLevel > 72
+SetFontSize 35
 
 Show
 Rarity Rare
