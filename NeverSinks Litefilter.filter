@@ -79,8 +79,9 @@ SetBackgroundColor 0 0 0 180
 # Uncut Gems
 #--------------------------
 
-# Always make Spirit gems pop
+# Make Spirit gems pop during campaign
 Show
+AreaLevel < 68
 BaseType "Uncut Spirit Gem"
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
@@ -112,22 +113,50 @@ MinimapIcon 1 Cyan Triangle
 SetFontSize 40
 
 # Gems up to level 18 in maps don't get a special highlight
-Show
-ItemLevel <= 18
-BaseType "Uncut Skill Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-SetFontSize 35
+#Show
+#ItemLevel <= 18
+#BaseType "Uncut Skill Gem"
+#SetTextColor 20 240 240
+#SetBorderColor 20 240 240
+#SetFontSize 35
 
-Show
-BaseType "Uncut Support Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-SetFontSize 35
+#Show
+#BaseType "Uncut Support Gem"
+#SetTextColor 20 240 240
+#SetBorderColor 20 240 240
+#SetFontSize 35
 
 # Level 19 gems and up in maps get a special highlight
+#Show
+#BaseType "Uncut Skill Gem"
+#SetTextColor 20 240 240
+#SetBorderColor 20 240 240
+#PlayAlertSound 2 300
+#PlayEffect Cyan
+#MinimapIcon 1 Cyan Triangle
+#SetFontSize 40
+
+# Only show level 20 skill gems
+Hide
+ItemLevel < 20
+BaseType "Uncut Skill Gem"
+
 Show
 BaseType "Uncut Skill Gem"
+SetTextColor 20 240 240
+SetBorderColor 20 240 240
+PlayAlertSound 2 300
+PlayEffect Cyan
+MinimapIcon 1 Cyan Triangle
+SetFontSize 40
+
+# Only show level 19+ spirit gems
+Hide
+ItemLevel < 19
+BaseType "Uncut Spirit Gem"
+
+Show
+BaseType "Uncut Spirit Gem"
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
 PlayAlertSound 2 300
@@ -140,7 +169,7 @@ SetFontSize 40
 #--------------------------
 
 # Special A Tier - League specific socketables and jewels
-Show 
+Show
 BaseType "Soul Core" "Timeless"
 SetTextColor 0 240 190
 SetBorderColor 0 240 190
@@ -150,7 +179,7 @@ PlayAlertSound 2 300
 PlayEffect Cyan
 
 # Special Highlight - Breach Rings
-Show 
+Show
 Rarity Rare
 BaseType == "Breach Ring"
 SetTextColor 0 240 190
@@ -160,7 +189,7 @@ MinimapIcon 1 Cyan Diamond
 PlayEffect Cyan
 PlayAlertSound 2 300
 
-Show 
+Show
 Rarity <= Magic
 BaseType == "Breach Ring"
 SetTextColor 0 240 190
@@ -169,7 +198,7 @@ MinimapIcon 2 Cyan Diamond
 PlayEffect Cyan Temp
 
 # Special A Tier - Sanctum Relics
-Show 
+Show
 Class "Relic"
 SetTextColor 0 240 190
 SetBorderColor 0 240 190
@@ -190,7 +219,7 @@ PlayEffect Cyan
 PlayAlertSound 2 300
 
 # Special B Tier - Any Runes and Charms
-Show 
+Show
 BaseType " Rune" " Charm"
 SetTextColor 0 240 190
 PlayEffect Cyan Temp
@@ -256,7 +285,7 @@ SetFontSize 40
 
 Show
 Class "Currency"
-BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
+BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 SetBackgroundColor 76 51 12
