@@ -447,6 +447,21 @@ PlayEffect Yellow
 MinimapIcon 1 Yellow Diamond
 
 #--------------------------
+# Bases to chance orb
+#--------------------------
+Show
+Class "Belts"
+BaseType "Ornate Belt"
+Rarity Normal
+SetTextColor 255 207 92
+SetBorderColor 255 207 92
+SetBackgroundColor 76 51 12
+PlayAlertSound 2 300
+PlayEffect Yellow
+MinimapIcon 1 Yellow Circle
+SetFontSize 45
+
+#--------------------------
 # Rings, Amulets, Belts
 #--------------------------
 
@@ -458,6 +473,7 @@ SetFontSize 40
 Show
 Class "Rings" "Amulets" "Belts"
 Rarity Magic
+SetBorderColor 20 240 240
 SetFontSize 40
 
 #--------------------------
