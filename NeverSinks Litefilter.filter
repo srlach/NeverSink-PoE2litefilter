@@ -510,11 +510,11 @@ SetFontSize 40
 
 ## Uncomment this rule to hide low level rares in high level zones
 
-Hide
-Rarity Rare
-DropLevel < 50
-AreaLevel > 72
-SetFontSize 35
+#Hide
+#Rarity Rare
+#DropLevel < 50
+#AreaLevel > 72
+#SetFontSize 35
 
 Show
 Rarity Rare
@@ -555,17 +555,17 @@ DropLevel < 55
 Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 # Quivers have some relevant bases at 50+ so we treat them different
-Hide
-AreaLevel > 74
-Rarity <= Magic
-DropLevel < 50
-Class "Quivers"
+#Hide
+#AreaLevel > 74
+#Rarity <= Magic
+#DropLevel < 50
+#Class "Quivers"
 
 Hide
 AreaLevel > 70
 Rarity <= Normal
 DropLevel < 50
-Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 #--------------------------
 # OPTIONAL RULES
@@ -582,12 +582,6 @@ Class "Bows"
 BaseType "Expert Cultist Bow"
 AreaLevel >= 65
 
-Show
-Rarity <= Magic
-Class "Bows"
-BaseType "Expert"
-AreaLevel >= 65
-
 # Show different xbows
 Show
 Rarity <= Magic
@@ -597,7 +591,7 @@ AreaLevel >= 65
 
 Hide
 Rarity <= Magic
-Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
+Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Crossbows" "Wands" "Sceptres"
 AreaLevel >= 65
 
 ### OPTIONAL RULE: REDUCES BACKGROUND ON LOW LEVEL BASES
