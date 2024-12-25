@@ -157,7 +157,7 @@ BaseType "Uncut Spirit Gem"
 
 Show
 BaseType "Uncut Spirit Gem"
-SetTextColor 20 240 240
+SetTextColor 255 207 132
 SetBorderColor 20 240 240
 PlayAlertSound 2 300
 PlayEffect Cyan
@@ -390,33 +390,48 @@ SetFontSize 40
 # Waystones
 #--------------------------
 
-Show
-WaystoneTier < 10
-AreaLevel > 77
+Hide
+WaystoneTier < 12
+#AreaLevel > 77
 BaseType "Waystone"
 Rarity <= Rare
 SetTextColor 255 255 255
 SetBorderColor 255 255 255
 SetFontSize 35
 
-Show
-WaystoneTier < 5
-AreaLevel > 74
-BaseType "Waystone"
-Rarity <= Rare
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-SetFontSize 35
+#Show
+#WaystoneTier < 5
+#AreaLevel > 74
+#BaseType "Waystone"
+#Rarity <= Rare
+#SetTextColor 255 255 255
+#SetBorderColor 255 255 255
+#SetFontSize 35
 
 Show
 BaseType "Waystone"
-Rarity <= Rare
+#Rarity <= Rare
 SetTextColor 255 255 255
-SetBorderColor 255 255 255
+#SetBorderColor 255 255 255
 PlayAlertSound 4 300
 PlayEffect White
 MinimapIcon 1 White Square
 SetFontSize 40
+
+Show
+BaseType "Waystone"
+Rarity == Normal
+SetBorderColor 255 255 255
+
+Show
+BaseType "Waystone"
+Rarity == Magic
+SetBorderColor 20 240 240
+
+Show
+BaseType "Waystone"
+Rarity == Rare
+SetBorderColor 20 240 240
 
 #--------------------------
 # Value Rares
