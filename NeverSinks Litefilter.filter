@@ -164,6 +164,11 @@ PlayEffect Cyan
 MinimapIcon 1 Cyan Triangle
 SetFontSize 40
 
+Hide
+BaseType "Uncut Support Gem"
+SetTextColor 20 240 240
+SetBorderColor 20 240 240
+
 #--------------------------
 # Socketables and Special Character Equipment
 #--------------------------
@@ -220,6 +225,12 @@ PlayAlertSound 2 300
 
 # Special B Tier - Any Runes and Charms
 Show
+AreaLevel < 68
+BaseType " Rune" " Charm"
+SetTextColor 0 240 190
+PlayEffect Cyan Temp
+
+Hide
 BaseType " Rune" " Charm"
 SetTextColor 0 240 190
 PlayEffect Cyan Temp
