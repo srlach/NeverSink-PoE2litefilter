@@ -143,12 +143,13 @@ BaseType "Uncut Skill Gem"
 
 Show
 BaseType "Uncut Skill Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-PlayAlertSound 2 300
-PlayEffect Cyan
-MinimapIcon 1 Cyan Triangle
-SetFontSize 40
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Star
 
 # Only show level 19+ spirit gems
 Hide
@@ -157,12 +158,13 @@ BaseType "Uncut Spirit Gem"
 
 Show
 BaseType "Uncut Spirit Gem"
-SetTextColor 255 207 132
-SetBorderColor 20 240 240
-PlayAlertSound 2 300
-PlayEffect Cyan
-MinimapIcon 1 Cyan Triangle
-SetFontSize 40
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Star
 
 Hide
 BaseType "Uncut Support Gem"
@@ -229,6 +231,17 @@ AreaLevel < 68
 BaseType " Rune" " Charm"
 SetTextColor 0 240 190
 PlayEffect Cyan Temp
+
+Show
+Quality >= 19
+BaseType " Charm"
+SetTextColor 255 207 92
+SetBorderColor 255 207 92
+SetBackgroundColor 76 51 12
+PlayAlertSound 2 300
+PlayEffect Yellow
+MinimapIcon 1 Yellow Circle
+SetFontSize 45
 
 Hide
 BaseType " Rune" " Charm"
@@ -409,7 +422,7 @@ SetFontSize 40
 #--------------------------
 
 Hide
-WaystoneTier < 12
+WaystoneTier < 13
 AreaLevel > 65
 BaseType "Waystone"
 Rarity <= Rare
