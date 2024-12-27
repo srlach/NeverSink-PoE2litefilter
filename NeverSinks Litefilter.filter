@@ -233,7 +233,7 @@ SetTextColor 0 240 190
 PlayEffect Cyan Temp
 
 Show
-Quality >= 19
+Quality >= 15
 BaseType " Charm"
 SetTextColor 255 207 92
 SetBorderColor 255 207 92
@@ -242,6 +242,12 @@ PlayAlertSound 2 300
 PlayEffect Yellow
 MinimapIcon 1 Yellow Circle
 SetFontSize 45
+
+Show
+Rarity Normal Magic Rare
+BaseType == "Golden Charm" "Stone Charm" "Thawing Charm" "Dousing Charm" "Antidote Charm"
+SetTextColor 0 240 190
+PlayEffect Cyan Temp
 
 Hide
 BaseType " Rune" " Charm"
@@ -480,9 +486,10 @@ MinimapIcon 1 Yellow Diamond
 #--------------------------
 # Bases to chance orb
 #--------------------------
+
 Show
 Class "Belts"
-BaseType "Ornate Belt"
+BaseType "Heavy Belt" "Stellar Amulet" "Azure Amulet" "Emerald Ring" "Sapphire Ring" "Ornate Belt"
 Rarity Normal
 SetTextColor 255 207 92
 SetBorderColor 255 207 92
@@ -496,12 +503,12 @@ SetFontSize 45
 # Rings, Amulets, Belts
 #--------------------------
 
-Show
+Hide
 Rarity Normal
 Class "Rings" "Amulets" "Belts"
 SetFontSize 40
 
-Show
+Hide
 Class "Rings" "Amulets" "Belts"
 Rarity Magic
 SetBorderColor 20 240 240
@@ -549,7 +556,7 @@ SetFontSize 40
 
 Show
 Rarity Rare
-SetFontSize 35
+SetFontSize 15
 
 #--------------------------
 # Hide Rules (only high level), super light edition
@@ -606,23 +613,36 @@ Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces
 ### OPTIONAL RULE: Hide random bases
 # REMOVE THE BASES YOU --DO-- WANT TO SEE BEFORE SETTING TO HIDE
 
-# Show different bows
-Hide
-Rarity <= Magic
-Class "Bows"
-BaseType "Expert Cultist Bow"
-AreaLevel >= 65
-
-# Show different xbows
 Show
-Rarity <= Magic
-Class "Crossbows"
-BaseType "Expert Forlorn Crossbow" "Expert Bombard Crossbow"
+Quality >= 20
+Rarity Normal Magic
+BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
 AreaLevel >= 65
+SetFontSize 40
+SetTextColor 0 0 0 255
+SetBorderColor 200 200 200 255
+SetBackgroundColor 130 110 110 255
+
+Show
+Mirrored False
+Corrupted False
+Rarity Normal Magic Rare
+BaseType == "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Serrated Quiver"
+SetFontSize 40
+SetBorderColor 255 125 0 160
+PlayEffect Blue
+MinimapIcon 0 Blue Diamond
+
+Show
+ItemLevel >= 65
+Rarity Rare
+BaseType == "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Moulded Mitts" "Expert Spiral Wraps" "Expert Feathered Sandals" "Expert Lizardscale Boots" "Expert Stone Greaves" "Expert Hunting Shoes" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Iron Cuirass" "Expert Scalper's Jacket" "Expert Feathered Tiara" "Expert Hunter Hood" "Expert Elite Greathelm" "Expert Tribal Mask" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Crystal Focus" "Expert Plumed Focus" "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Expert Slicing Quarterstaff" "Rattling Sceptre" "Attuned Wand" "Siphoning Wand" "Chiming Staff" "Primed Quiver"
+SetFontSize 45
+SetBackgroundColor 20 20 0 255
 
 Hide
 Rarity <= Magic
-Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Crossbows" "Wands" "Sceptres"
+Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
 AreaLevel >= 65
 
 ### OPTIONAL RULE: REDUCES BACKGROUND ON LOW LEVEL BASES
