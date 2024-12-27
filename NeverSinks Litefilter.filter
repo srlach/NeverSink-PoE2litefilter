@@ -556,7 +556,8 @@ SetFontSize 40
 
 Show
 Rarity Rare
-SetFontSize 15
+SetBackgroundColor 80 80 80 100
+SetFontSize 25
 
 #--------------------------
 # Hide Rules (only high level), super light edition
