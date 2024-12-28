@@ -554,10 +554,10 @@ SetFontSize 40
 #AreaLevel > 72
 #SetFontSize 35
 
-Show
-Rarity Rare
-SetBackgroundColor 80 80 80 100
-SetFontSize 25
+#Show
+#Rarity Rare
+#SetBackgroundColor 80 80 80 100
+#SetFontSize 25
 
 #--------------------------
 # Hide Rules (only high level), super light edition
@@ -631,6 +631,7 @@ Rarity Normal Magic Rare
 BaseType == "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Serrated Quiver"
 SetFontSize 40
 SetBorderColor 255 125 0 160
+SetBackgroundColor 20 20 0 255
 PlayEffect Blue
 MinimapIcon 0 Blue Diamond
 
@@ -640,6 +641,11 @@ Rarity Rare
 BaseType == "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Moulded Mitts" "Expert Spiral Wraps" "Expert Feathered Sandals" "Expert Lizardscale Boots" "Expert Stone Greaves" "Expert Hunting Shoes" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Iron Cuirass" "Expert Scalper's Jacket" "Expert Feathered Tiara" "Expert Hunter Hood" "Expert Elite Greathelm" "Expert Tribal Mask" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Crystal Focus" "Expert Plumed Focus" "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Expert Slicing Quarterstaff" "Rattling Sceptre" "Attuned Wand" "Siphoning Wand" "Chiming Staff" "Primed Quiver"
 SetFontSize 45
 SetBackgroundColor 20 20 0 255
+
+Show
+Rarity Rare
+SetBackgroundColor 80 80 80 100
+SetFontSize 25
 
 Hide
 Rarity <= Magic
