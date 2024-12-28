@@ -629,7 +629,7 @@ Mirrored False
 Corrupted False
 Rarity Normal Magic Rare
 BaseType == "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Serrated Quiver"
-SetFontSize 40
+SetFontSize 45
 SetBorderColor 255 125 0 160
 SetBackgroundColor 30 61 100
 PlayEffect Blue
@@ -639,9 +639,9 @@ Show
 ItemLevel >= 65
 Rarity Rare
 BaseType == "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Moulded Mitts" "Expert Spiral Wraps" "Expert Feathered Sandals" "Expert Lizardscale Boots" "Expert Stone Greaves" "Expert Hunting Shoes" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Iron Cuirass" "Expert Scalper's Jacket" "Expert Feathered Tiara" "Expert Hunter Hood" "Expert Elite Greathelm" "Expert Tribal Mask" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Crystal Focus" "Expert Plumed Focus" "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Expert Slicing Quarterstaff" "Rattling Sceptre" "Attuned Wand" "Siphoning Wand" "Chiming Staff" "Primed Quiver"
-SetFontSize 45
-SetTextColor 0 0 0 255
-SetBackgroundColor 191 203 227
+SetFontSize 40
+SetBorderColor 176 176 160
+SetBackgroundColor 60 0 138
 
 Show
 Rarity Rare
