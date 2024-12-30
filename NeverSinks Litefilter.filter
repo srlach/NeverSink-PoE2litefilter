@@ -429,7 +429,7 @@ SetFontSize 40
 
 Hide
 WaystoneTier < 13
-AreaLevel > 65
+AreaLevel > 77
 BaseType "Waystone"
 Rarity <= Rare
 SetTextColor 255 255 255
@@ -488,7 +488,7 @@ MinimapIcon 1 Yellow Diamond
 #--------------------------
 
 Show
-Class "Belts"
+Class "Rings" "Amulets" "Belts"
 BaseType "Heavy Belt" "Stellar Amulet" "Azure Amulet" "Emerald Ring" "Sapphire Ring" "Ornate Belt"
 Rarity Normal
 SetTextColor 255 207 92
