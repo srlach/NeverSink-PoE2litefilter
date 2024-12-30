@@ -614,10 +614,16 @@ Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces
 ### OPTIONAL RULE: Hide random bases
 # REMOVE THE BASES YOU --DO-- WANT TO SEE BEFORE SETTING TO HIDE
 
-#Hide
-#Rarity Normal Magic Rare
-#AreaLevel > 79
-#BaseType "Advanced"
+Hide
+Rarity Normal Magic Rare
+AreaLevel >= 79
+BaseType "Advanced"
+
+# Never show these bases
+Hide
+Rarity Normal Magic Rare
+AreaLevel >= 79
+BaseType "Expert Cultist Bow" "Expert Warden Bow"
 
 Show
 Quality >= 20
